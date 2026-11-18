@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- `scripts/validate-package.py` now fails when a pattern number appears twice in `SKILL.md` or in the README tables. Before, the second one replaced the first and the check passed (#340).
+
 ## 4.0.0
 
 - The skill no longer forbids adding facts. Where the text is generic, it now adds a specific detail it knows to be true. It still keeps every claim the original made and treats a lost or changed claim as an error. This reverses the no-invention rule from 2.9.0. Patterns 14 and 17 follow the same change.
